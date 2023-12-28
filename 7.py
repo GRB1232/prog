@@ -1,18 +1,12 @@
-import sys
+A = int(input("Введите положительное число A: "))
+B = int(input("Введите положительное число B: "))
+C = int(input("Введите положительное число C: "))
 
-a = float(input('Введите число А '))
-b = float(input('Введите число В '))
-c = float(input('Введите число С '))
-if a<=0 or b<=0 or c<=0:
-    print('Ошибка. Число должно быть больше нуля.')
-    sys.exit()
-
-ab = a * b
-sqC = c ** 2
-summ = ab
-done = 0
-while summ>= sqC:
-    summ -= sqC
-    done += 1
-print('В прямоугольник AB поместятся',done,'квадратa(ов) со стороной С')
-
+f = 0
+while A >= C:
+    A -= C
+    B1 = B
+    while B1>= C:
+        B1 -= C
+        f += 1
+print (f)
